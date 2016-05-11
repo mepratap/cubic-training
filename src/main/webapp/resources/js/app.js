@@ -3,8 +3,8 @@
 var myApp = angular.module('trainingApp', ['ngRoute']);
 
 myApp.config(['$routeProvider', function($routeProvider) {
-	$routeProvider.when('/dashboard', {
-		templateUrl : '/views/dashboard.jsp',
+	$routeProvider.when('/', {
+		templateUrl : 'resources/pages/dashboard.jsp',
 		controller : 'DashboardCtrl'
 	}).when('/add-employee', {
 		templateUrl : 'resources/pages/add-employee.jsp',

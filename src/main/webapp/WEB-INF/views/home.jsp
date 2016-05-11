@@ -22,7 +22,7 @@
 <body ng-app="trainingApp">
 	<div class="menubg">
 		<div class="menu">
-				<a href="#dashboard">Dashboard</a>
+				<a href="#/">Dashboard</a>
 				<a href="#add-employee">Add Employee</a>
 				<a href="#view-employee">View Employee</a>
 				<a href="#calc-salary">Calculate Salary</a>
