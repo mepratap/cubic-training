@@ -1,0 +1,55 @@
+h1{
+	color:red;
+}
+
+a {text-decoration:none;color:#ff4747;}
+a:hover {text-decoration:none;color:#222;}
+
+.header {
+    height: 40px;
+    border-bottom: 1px solid #EEE;
+    background-color: #ffffff;
+    height: 40px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content {
+	min-height: 500px;
+	padding: 50px 50px;
+}
+
+.menubg {
+	width: 100%;
+	padding: 5px 0;
+	background: #FFF;
+	float:left;
+}
+.menu {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+}
+.menu a {
+	background: #ff4747;
+	color: #FFF;
+	padding: 0 15px;
+	margin: 10px 0 10px 20px;
+	line-height: 40px;
+	float:left;
+}
+.menu a:hover {
+	background: #ef3535;
+}
+
+.footer {
+	background: #ddd;
+	padding: 15px 20px;
+	color: #666;
+	text-align:center;
+	font-weight:bold;
+}
