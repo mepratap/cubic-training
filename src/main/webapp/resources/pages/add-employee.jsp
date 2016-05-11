@@ -1,3 +1,3 @@
 <div>
-	<p> IAdd employee page </p>
+	<h1>Add Employee Section</h1> 
 </div>
