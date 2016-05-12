@@ -15,34 +15,33 @@ import com.cubic.train.model.Department;
 import com.cubic.train.model.Employee;
 import com.cubic.train.service.EmployeeService;
 
-
 @Controller
 public class APITestController {
 	Logger logger = Logger.getLogger(APITestController.class);
 	@Autowired
-	private EmployeeService employeeService; 
-	
+	private EmployeeService employeeService;
+
 	@RequestMapping(value = "/all_department", method = RequestMethod.GET)
 	public @ResponseBody List<Department> getDepartments() {
 		logger.info("++++ Getting Departments ++++++++++");
 		return employeeService.getDepartments();
 	}
-	
+
 	@RequestMapping(value = "/employee", method = RequestMethod.POST)
-	public @ResponseBody Employee createEmployee(@RequestBody Employee employee){
+	public @ResponseBody Employee createEmployee(@RequestBody Employee employee) {
+		logger.info("adding data.........");
 		employeeService.saveEmployee(employee);
 		return employee;
 	}
-	
+
 	@RequestMapping(value = "/employee", method = RequestMethod.GET)
-	public @ResponseBody List<Employee> getEmployees(){
+	public @ResponseBody List<Employee> getEmployees() {
 		return employeeService.getEmployees();
 	}
-	
+
 	@RequestMapping(value = "/calc_salary/{empNo}/{totalWorkingDays}", method = RequestMethod.GET)
 	public @ResponseBody Double calculateSalary(@PathVariable String empNo, @PathVariable Integer totalWorkingDays) {
 		return employeeService.calculateSalary(empNo, totalWorkingDays);
 	}
-	
-	
+
 }

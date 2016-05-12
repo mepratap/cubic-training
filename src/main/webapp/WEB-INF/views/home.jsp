@@ -17,6 +17,11 @@
 <!-- Angular Materials -->
 <script src="<c:url value='resources/js/app.js' />"></script>
 
+<!-- Controller -->
+<script src="<c:url value='resources/js/controller/employeeCtrl.js'/>"></script>
+
+<!-- Service -->
+<script src="<c:url value='resources/js/service/employeeService.js'/>"></script>
 
 </head>
 <body ng-app="trainingApp">
